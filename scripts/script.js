@@ -113,13 +113,11 @@ document.addEventListener("DOMContentLoaded", function(){
     let body = document.getElementById("body");
     body.addEventListener("click", playSound);
 
-    /*
-    document.body.onkeyup = function(e){
+    document.body.onkeydown = function(e){
         if(e.keyCode === 13 || e.keyCode === 32){
-            playsound();
+            body.click();
         }
     }
-    */
     
     function playSound(){
         let i = getRandomInt(4);
