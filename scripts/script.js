@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     particlesJS('particles-js', {
         "particles": {
           "number": {
-            "value": 80,
+            "value": 30,
             "density": {
               "enable": true,
               "value_area": 800
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
             "value": "#ffffff"
           },
           "shape": {
-            "type": "image",
+            "type": ["image","image2"],
             "stroke": {
               "width": 0,
               "color": "#000000"
@@ -109,6 +109,8 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         "retina_detect": true
     });
+
+    
     
     let body = document.getElementById("body");
     body.addEventListener("click", playSound);

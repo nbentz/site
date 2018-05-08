@@ -422,6 +422,15 @@ var pJS = function(tag_id, params){
     pJS.canvas.ctx.fillStyle = color_value;
     pJS.canvas.ctx.beginPath();
 
+    function draw() {
+      pJS.canvas.ctx.drawImage(
+        img_obj, 
+        p.x-radius, 
+        p.y-radius,
+        radius*2,
+        radius*2 / 1
+      );
+    }
     switch(p.shape){
 
       case 'circle':
@@ -460,6 +469,7 @@ var pJS = function(tag_id, params){
 
       case 'image':
 
+      /*
         function draw(){
           pJS.canvas.ctx.drawImage(
             img_obj,
@@ -469,6 +479,22 @@ var pJS = function(tag_id, params){
             radius*2 / p.img.ratio
           );
         }
+        */
+       
+        if(pJS.tmp.img_type == 'svg'){
+          var img_obj = p.img.obj;
+        }else{
+          var img_obj = pJS.tmp.img_obj;
+        }
+        
+        
+        if(img_obj){
+          draw();
+        }
+
+      break;
+
+      case 'image2':
 
         if(pJS.tmp.img_type == 'svg'){
           var img_obj = p.img.obj;
@@ -476,6 +502,9 @@ var pJS = function(tag_id, params){
           var img_obj = pJS.tmp.img_obj;
         }
 
+        var element = document.createElement('img');
+        element.src = './imgs/owen2.png';
+        img_obj = element;
         if(img_obj){
           draw();
         }
