@@ -114,6 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
     
     let body = document.getElementById("body");
     body.addEventListener("click", playSound);
+    body.addEventListener( "touchstart" , playsound);
 
     document.body.onkeydown = function(e){
         if(e.keyCode === 13 || e.keyCode === 32){
@@ -121,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
     
+    //plays a random sound file from /sounds
     function playSound(){
         let i = getRandomInt(4);
         console.log(i);
