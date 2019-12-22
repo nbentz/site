@@ -271,6 +271,11 @@ color: #517fa4;
 /*---Media Queries --*/
 @media (max-width:992px){
    
+    #body {
+        background-image: url('./imgs/galaxy.jpg');
+        background-size: cover;
+    }
+
     .circle{
         height: 10em;
         width: 10em;
@@ -289,6 +294,11 @@ color: #517fa4;
 }
 
 @media (max-width:768px){
+    #body {
+        background-image: url('./imgs/galaxy.jpg');
+        background-size: cover;
+    }
+
     .nav-item{
         text-align: center;
     }
@@ -311,6 +321,11 @@ color: #517fa4;
 }
 
 @media (max-width:576px){
+    #body {
+        background-image: url('./imgs/galaxy.jpg');
+        background-size: cover;
+    }
+
     .imagePad{
         padding-top: 7rem;
     }
@@ -352,6 +367,11 @@ color: #517fa4;
 }
 
 @media (max-width:320px){
+    #body {
+        background-image: url('./imgs/galaxy.jpg');
+        background-size: cover;
+    }
+    
     .imagePad{
         padding-top: 4rem;
     }
